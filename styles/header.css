@@ -5,11 +5,13 @@ header {
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 1fr 2fr 2fr;
-    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-rows: 2fr auto auto auto;
 }
 
 header .grid-item {
-    background-color: red;
+    background: rgba(255, 255, 255, 0.1);
+    mix-blend-mode: normal;
+    border-radius: 24px;
 }
 
 header .search-icon {
@@ -27,12 +29,221 @@ header .search-icon {
     cursor: pointer;
 }
 
+header .grid-item.happyTuesday {
+    padding: 60px;
+    grid-column: 1 / span 3;
+}
+
+header .grid-item.happyTuesday .title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 43px;
+    color: #fff;
+}
+
+header .grid-item.happyTuesday p {
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 30px;
+    color: #C5C5C5;
+}
+
+header .grid-item.right-ring-part {
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header .grid-item.right-ring-part .three-dots {
+    position: absolute;
+    top: 19px;
+    left: 23px;
+    display: flex;
+    gap: 6px;
+    cursor: pointer;
+}
+
+header .grid-item.right-ring-part .three-dots div {
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+header .grid-item.collapse {
+    grid-column: 1 / span 4;
+    padding: 32px 60px 30px;
+}
+
+header .grid-item.collapse .text {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #fff;
+}
+
+header .grid-item.collapse .boxes {
+    display: flex;
+    gap: 5%;
+    align-items: center;
+}
+
+header .grid-item.collapse .box {
+    width: 16%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    position: relative;
+}
+
+header .grid-item.collapse .box img {
+    width: 100%;
+}
+
+header .grid-item.collapse .box .bottom-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 43px;
+    color: #fff;
+}
+
+header .grid-item.collapse .box .abs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header .grid-item.collapse .box .abs .top {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 73px;
+    color: #fff;
+}
+
+header .grid-item.collapse .box .abs .middle {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+header .grid-item.collapse .box .abs .bottom {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #C5C5C5;
+}
+
+header .grid-item.creativeReviewers {
+    grid-column: 1 / span 2;
+    padding: 18px 22px;
+    background-color: #fff;
+}
+
+header .grid-item.creativeReviewers .title {
+    margin-bottom: 18px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000;
+    text-align: center;
+}
+
+header .grid-item.creativeReviewers .middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .grid-item.creativeReviewers .middle .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .grid-item.creativeReviewers .middle .left .title {
+    margin-bottom: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000;
+}
+
+header .grid-item.creativeReviewers .middle .left .def {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: #7D7D7D;
+}
+
+header .grid-item.creativeReviewers .middle button {
+    background-color: #FE5B81;
+    border-radius: 16px;
+    border: none;
+    padding: 6px 16px;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+header .grid-item.creativeReviewers .bottom-btn {
+    border: 1px solid #EDEDED;
+    border-radius: 16px;
+    background-color: #fff;
+    padding: 6px 30px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #2D2D2D;
+    margin: 18px 0 25px;
+    cursor: pointer;
+}
+
+header .grid-item.call {
+    background-color: #fff;
+}
+
+header .grid-item.account {
+    background-color: #fff;
+}
+
+header .grid-item.recentDocuments {
+    /* min-height: calc(200% + 20px); */
+    background-color: #fff;
+}
+
+header .grid-item.behindTheScenes {
+    /* min-height: calc(200% + 20px); */
+}
+
 
 /* --------------------Media Queries-------------------- */
 
 @media screen and (max-width: 767px) {
     header {
-        padding: 126px 60px 100px 60px;
+        padding: 126px 20px 100px;
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -40,5 +251,15 @@ header .search-icon {
 
     header .search-icon {
         display: none;
+    }
+
+    header .grid-item.collapse .boxes {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    header .grid-item.collapse .boxes .box {
+        width: 100%;
+        max-width: 200px;
     }
 }
