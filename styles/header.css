@@ -1,0 +1,44 @@
+header {
+    min-height: 100%;
+    padding: 60px 60px 100px 126px;
+    background: linear-gradient(0deg, #1E183C 62.3%, #05060B 93.31%);
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 2fr 2fr;
+    grid-template-rows: 2fr 1fr 1fr;
+}
+
+header .grid-item {
+    background-color: red;
+}
+
+header .search-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #4D61F6;
+    box-shadow: 0px 2px 4px rgba(9, 15, 52, 0.0434604);
+    position: fixed;
+    bottom: 11px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+/* --------------------Media Queries-------------------- */
+
+@media screen and (max-width: 767px) {
+    header {
+        padding: 126px 60px 100px 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    header .search-icon {
+        display: none;
+    }
+}
