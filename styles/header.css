@@ -1,6 +1,6 @@
 header {
     min-height: 100%;
-    padding: 60px 60px 100px 126px;
+    padding: 60px 60px 0 126px;
     background: linear-gradient(0deg, #1E183C 62.3%, #05060B 93.31%);
     display: grid;
     gap: 20px;
@@ -156,6 +156,7 @@ header .grid-item.creativeReviewers {
     grid-column: 1 / span 2;
     padding: 18px 22px;
     background-color: #fff;
+    height: 180px;
 }
 
 header .grid-item.creativeReviewers .title {
@@ -171,6 +172,9 @@ header .grid-item.creativeReviewers .middle {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #F8F8F8;
+    border-radius: 9px;
+    padding: 7px 10px;
 }
 
 header .grid-item.creativeReviewers .middle .left {
@@ -223,19 +227,210 @@ header .grid-item.creativeReviewers .bottom-btn {
 
 header .grid-item.call {
     background-color: #fff;
+    padding: 18px;
+    transform: translateY(-113%);
+}
+
+header .grid-item.call .title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000;
+    text-align: center;
+}
+
+header .grid-item.call .time {
+    margin: 15px 0 19px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 18px;
+    color: #4D61F6;
+    text-align: center;
+}
+
+header .grid-item.call .buttons {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+header .grid-item.call .buttons button {
+    width: 100%;
+    padding: 6px 0;
+    border: none;
+    border-radius: 16px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+header .grid-item.call .buttons button:first-of-type {
+    background-color: #4D61F6;
+    color: #fff;
+}
+
+header .grid-item.call .buttons button:last-of-type {
+    background-color: #EDEDED;
+    color: #000;
+}
+
+header .grid-item.call .bottom-btn {
+    margin-top: 7px;
+    padding: 4px 10px;
+    cursor: pointer;
+    border: 1px solid #EDEDED;
+    border-radius: 16px;
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #2D2D2D;
 }
 
 header .grid-item.account {
     background-color: #fff;
+    padding: 18px;
+    transform: translateY(-113%);
+    height: 155px;
+}
+
+header .grid-item.account .title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000;
+    text-align: center;
+}
+
+header .grid-item.account .middle {
+    margin: 15px 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    color: #000;
+}
+
+header .grid-item.account .buttons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+header .grid-item.account .buttons button {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background-color: #4D61F6;
+    border-radius: 16px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
 }
 
 header .grid-item.recentDocuments {
-    /* min-height: calc(200% + 20px); */
     background-color: #fff;
+    padding: 18px 20px;
+    width: 120%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header .grid-item.recentDocuments .title {
+    padding-bottom: 8px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000;
+}
+
+header .grid-item.recentDocuments .box {
+    margin-top: 11px;
+    padding: 13px 20px;
+    background-color: #F8F8F8;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .grid-item.recentDocuments .box .left-side {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+header .grid-item.recentDocuments .box .left-side .left {
+    border: none;
+    border-radius: 14px;
+    width: 46px;
+    height: 46px;
+    background-color: #674DF6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .grid-item.recentDocuments .box .top-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #2D2D2D;
+}
+
+header .grid-item.recentDocuments .box .bottom-text {
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: #7D7D7D;
+}
+
+header .grid-item.recentDocuments .box button {
+    background-color: #32DBBB;
+    border-radius: 12.5px;
+    padding: 6px 10px;
+    border: none;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    color: #fff;
+    cursor: pointer;
+}
+
+header .grid-item.recentDocuments .bottom-btn {
+    margin-top: 20px;
+    padding: 6px 25px;
+    background-color: #fff;
+    border: 1px solid #EDEDED;
+    border-radius: 16px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #2D2D2D;
+    font-weight: 500;
+    cursor: pointer;
 }
 
 header .grid-item.behindTheScenes {
-    /* min-height: calc(200% + 20px); */
+    margin-left: 14.5%;
+    width: 85%;
+}
+
+header .grid-item.behindTheScenes img {
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -243,7 +438,7 @@ header .grid-item.behindTheScenes {
 
 @media screen and (max-width: 767px) {
     header {
-        padding: 126px 20px 100px;
+        padding: 126px 20px 50px;
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -261,5 +456,26 @@ header .grid-item.behindTheScenes {
     header .grid-item.collapse .boxes .box {
         width: 100%;
         max-width: 200px;
+    }
+
+    header .grid-item.recentDocuments {
+        width: 100%;
+    }
+
+    header .grid-item.behindTheScenes {
+        margin-left: 0;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        height: 243px;
+    }
+
+    header .grid-item.call {
+        margin-top: 180px;
+        width: 100%;
+    }
+
+    header .grid-item.account {
+        width: 100%;        
     }
 }
